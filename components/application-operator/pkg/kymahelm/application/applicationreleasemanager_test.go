@@ -26,8 +26,6 @@ const (
 	tenant                  = "tenant"
 	expectedOverridesFormat = `global:
     domainName: 
-    applicationGatewayImage: 
-    applicationGatewayTestsImage: 
     eventServiceImage: 
     eventServiceTestsImage: 
     applicationConnectivityValidatorImage: 

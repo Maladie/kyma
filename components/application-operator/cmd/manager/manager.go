@@ -136,8 +136,6 @@ func newGatewayManager(options *options, cfg *rest.Config, helmClient kymahelm.H
 func newApplicationReleaseManager(options *options, cfg *rest.Config, helmClient kymahelm.HelmClient) (appRelease.ApplicationReleaseManager, error) {
 	overridesDefaults := appRelease.OverridesData{
 		DomainName:                            options.domainName,
-		ApplicationGatewayImage:               options.applicationGatewayImage,
-		ApplicationGatewayTestsImage:          options.applicationGatewayTestsImage,
 		EventServiceImage:                     options.eventServiceImage,
 		EventServiceTestsImage:                options.eventServiceTestsImage,
 		ApplicationConnectivityValidatorImage: options.applicationConnectivityValidatorImage,
